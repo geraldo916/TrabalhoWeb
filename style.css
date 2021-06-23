@@ -1,0 +1,107 @@
+@font-face{
+    font-family: 'Circular-Book';
+    src: url("Fonts/CircularStd-Book.otf");
+}
+@font-face{
+    font-family: 'Circular-Bold';
+    src: url("Fonts/CircularStd-Bold.otf");
+}
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --font-principal: "Circular-Book";
+    --font-secundaria: 'Circular-Bold';
+    --cor-font: #2c444e;
+    --cor-font-secundaria: #b1bfc5;
+}
+html{
+    font-family: var(--font-principal);
+    font-size: 12px;
+    color: var(--cor-font);
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+section{
+    padding: 3.9rem 0;
+    background-color: #f7f4f4;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-font);
+}
+p{
+    font-size: 1.6rem;
+}
+.container{
+    width: 100%;
+    max-width: 944px;
+    margin: auto;
+    padding: 0 2.4rem;
+
+}
+header{
+    background-color: #00bea4;
+}
+.header-alt .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 3.7rem;
+}
+.header-alt h1{
+    font-weight: 100;
+    font-size: 28px;
+}
+.header-alt h1 .alt{
+    color: #00bea4;
+}
+.header-alt h3{
+    font-weight: 100;
+    font-size: 23px;
+}
+.icon-home{
+    color:white;
+    z-index: 1;
+}
+nav{
+    height: 4rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.nav-list{
+   list-style: none;
+   position: absolute;
+   right: 0;
+}
+.nav-item{
+    display: inline-block;
+    margin-left: 5rem;
+}
+.nav-item a{
+    color: white;
+}
+
+
+/*Rodape*/
+footer{
+    clear: both;
+    background-color: #1b2e35;
+    color: #b1bfc5;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+footer p{
+    font-size: 16px;
+    padding: 30px;
+}

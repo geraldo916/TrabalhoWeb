@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="geo.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+    <title>Trabalho de Web</title>
+</head>
+<body>
+    <div class="header-alt">
+        <div class="container">
+            <h1 class="logo">
+                <a href="index.html">Trabalho<span class="alt">Web</span></a>
+            </h1>
+            <h3>Seja um Webmaster</h3>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="nav-link icon-home"><i class="fa fa-home"></i></a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="hcj.html" class="nav-link">HTML CSS3 e JS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="msvg.html" class="nav-link">Mathml e SVG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="form.html" class="nav-link">Formulário</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="geo.html" class="nav-link">Geolocalização</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="store.html" class="nav-link">WebStorage</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="geo">
+        <div class="container">
+            <div class="loca">
+                <h1>Localização</h1>
+                <table>
+                    <tr>
+                        <td>País:</td>
+                        <td id="pais">Indisponivel</td>
+                    </tr>
+                    <tr>
+                        <td>Cidade:</td>
+                        <td id="cidade">Indisponivel</td>
+                    </tr>
+                </table>
+                <span><a id="map" target="_blank">Ver no Google Maps</a></span>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>TrabalhoWeb 2020-Todos os Direitos Reservados<br/>
+                Desenvolvido por: Geraldo Arcanjo</p>
+        </div>
+    </footer>
+    <script>
+
+        
+
+        if(!typeof geoplugin_city === 'function'){
+            let cidade = document.getElementById("cidade").innerHTML ="Indisponivel"
+        }else{
+            let cidade = document.getElementById("cidade").innerHTML = geoplugin_city()
+        }
+
+        if(!typeof geoplugin_countryName === 'function'){
+            let cidade = document.getElementById("pais").innerHTML ="Indisponivel"
+        }else{
+            let cidade = document.getElementById("pais").innerHTML = geoplugin_countryName() 
+        }
+
+        function getLocation(){
+            if(!navigator.geolocation){
+                return null
+            }else{
+                navigator.geolocation.getCurrentPosition((pos)=>{
+                    let lat = pos.coords.latitude
+                    let long = pos.coords.longitude
+                    let coords = lat + ',' + long
+                    document.querySelector("#map").setAttribute("href","https:\\maps.google.co.ao/?q=" + coords);
+                })
+            }
+        }
+
+        getLocation()
+
+    </script>
+</body>
+</html>

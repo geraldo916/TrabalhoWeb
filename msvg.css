@@ -1,0 +1,343 @@
+@font-face{
+    src: url("Fonts/Orbitron-Regular.ttf");
+    font-family: "Orbitron";
+}
+
+.banner{
+    background-image: url("imagens/Untitled-1.jpg");
+    background-position: top;
+    background-size: cover;
+    height: 500px;
+}
+.into h2{
+    font-size: 34px;
+    letter-spacing: 4.6px;
+    margin-bottom: 15px;
+    border-bottom: 4px solid #009c85;
+}
+.into p{
+    line-height: 2.4rem;
+    text-indent: 30px;
+}
+.into h3{
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.exemplo h4{
+    font-size: 15px;
+    margin-top: 10px;
+}
+.exemplo>span{
+    opacity: 0.5;
+}
+.equa{
+    display: flex;
+    justify-content: space-between;
+}
+.equa h3{
+    margin-top: 30px;
+    font-size: 28px;
+    color: #009c85;
+}
+.into-math{
+    width: 460px;
+}
+.into-math p{
+    margin-top: 10px;
+    line-height: 2.4rem;
+}
+.ex{
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 18px;
+}
+.ex li{
+    margin-top: 10px;
+}
+button{
+    margin-left: -30px;
+    margin-top: 15px;
+    font-weight: 700;
+    width: 140px;
+    height: 40px;
+    border: none;
+    background-color: #00bea4;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+button:hover{
+    box-shadow: 0px 0px 4px #00bea59c;
+}
+.res{
+    box-shadow:  1px 2px 5px #1235301a;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 600px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    position: relative;
+}
+
+.res h3{
+    font-size: 20px;
+}
+.res div>h2{
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    font-size: 20px;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    top: 0;
+    padding: 6px;
+    margin-bottom: 10px;
+    background-color: #009c85;
+    color: #fff;
+}
+.res div{
+    margin-top: -10px;
+    padding: 10px 0;
+}
+math{
+    margin-top: 10px;
+    display: flex;
+    font-size: 15px;
+}
+/*SVG*/
+.Els{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.Els .el{
+    border-radius: 10px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    height: 366px;
+    width: 330px;
+    box-shadow:  8px 5px 10px rgba(0,0,0,.5);
+}
+/*Loading*/
+.loading{
+    background-color: #000; 
+    font-family: 'Orbitron';
+}
+.txt{
+    font-size: 7px;
+    animation: blink .9s ease-in-out infinite;
+}
+.triang{
+    stroke-dasharray: 17;
+    animation: dash 2.5s infinite;
+}
+/*icons animado*/
+.ani-icons{
+    background-color: #1b2e35;
+    padding: 20px;
+}
+.icon{
+    width: 160px;
+}
+.icon path{
+    fill: transparent;
+    stroke-width: 15;
+    stroke: #18a592;
+    stroke-dasharray: 1575;
+    stroke-dashoffset: 0;
+    animation: animacao 2s linear forwards infinite;
+}
+
+/*Skill svg*/
+.skills{
+    background-color: #101010;
+    text-align: center;
+    height: 500px;
+}
+.skills h2{
+    color: #fff;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+.skills .container>div{
+    display: flex;
+    justify-content: space-around;
+    height: 400px;
+    align-items: center;
+}
+.skills svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    z-index: 1500;
+}
+.skills svg circle{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #191919;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px,5px);
+}
+.skil{
+    position: relative;
+    width: 250px;
+    background: linear-gradient(0deg,#1a1919,rgb(24, 23, 23),#1b1b1b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.skil:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.5);
+}
+.skil:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.082);
+    pointer-events: none;
+    z-index: 1;
+}
+.skills svg circle:nth-child(2){
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+.html svg circle:nth-child(2){
+    animation: animacao-skil-html 01.4s infinite;
+    stroke: #00ff43;
+}
+.css svg circle:nth-child(2){
+    animation: animacao-skil-css 01.4s infinite;
+    stroke: #00a1ff;
+}
+.js svg circle:nth-child(2){
+    animation: animacao-skil-js 01.4s infinite;
+    stroke: #ff04f7;
+}
+.percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 50px #000;
+    background: #222;
+    z-index: 1500;
+}
+.percent .num{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.percent .num h2{
+    color: #777;
+    font-weight: 700;
+    font-size: 40px;
+    transition: 0.5s;
+}
+.skil:hover .percent .num h2{
+    color: #fff;
+    font-size: 60px;
+}
+.percent .num h2 span{
+    font-size: 24px;
+    color: #777;
+    transition: 0.5s;
+}
+.skil:hover .percent .num h2 span{
+    color: #fff;
+}
+.text{
+    margin-top: 20px;
+    color: #777;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.skil:hover .text{
+    color: #fff;
+}
+/*Keyframes*/
+
+/*keyframes Loading*/
+@keyframes dash{
+    to {
+        stroke-dashoffset: 136;
+    }
+}
+
+@keyframes blink{
+    50%{
+        opacity: 0;
+    }
+}
+
+/*Keyframes icons*/
+@keyframes animacao{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 1569;
+    }
+    80%{
+        stroke-dashoffset: 3138;
+        fill: transparent;
+    }
+    80%{
+        stroke-dashoffset: 3138;
+        fill: #18a592;
+    }
+}
+/*keyframes skil*/
+@keyframes animacao-skil-html{
+    0%{
+        stroke-dasharray: 440;
+        stroke-dashoffset: 440;
+    }
+    100%{
+        stroke-dashoffset: 44;
+    }
+}
+@keyframes animacao-skil-css{
+    0%{
+        stroke-dasharray: 440;
+        stroke-dashoffset: 440;
+    }
+    100%{
+        stroke-dashoffset: 60;
+    }
+}
+@keyframes animacao-skil-js{
+    0%{
+        stroke-dasharray: 440;
+        stroke-dashoffset: 440;
+    }
+    100%{
+        stroke-dashoffset: 147;
+    }
+}
