@@ -1,0 +1,171 @@
+.form{
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(to right, #3addf1,#4cf1a4);
+}
+.inscreva{
+    float: left;
+    position: relative;
+    background-color: #fff;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    box-shadow: 2px 2px 3px rgba(109, 101, 101, 0.2);
+}
+.form img{
+    position: absolute;
+    right: 0;
+    width: 40%;
+    z-index: 1000;
+}
+form{
+    margin-top: 3em;
+    margin-left: 10px;
+    width: 400px;
+    font-size: 18px;
+    color: #343434;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*input[type='text'] {
+    border-radius: 8px;
+    background-color: #f5f6f7;
+    width:240px;
+    height: 20px;
+    outline: none;
+    border:none;
+    padding:4px 12px;
+    box-shadow: inset 0px 0px 2px rgba(0,0,0,.1) ; 
+}*/
+.cabecalho-form{
+    width: 100%;
+    margin-bottom: 25px;
+}
+h3{
+    font-size: 13px;
+}
+.cabecalho-form>h2{
+    width: 305px;
+    position: absolute;
+    top: 25px;
+}
+.cabecalho-form .bt{
+    width: 250px;
+    height: 36px;
+    background-color: #4285f4;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    z-index: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.cabecalho-form .bt>span{
+    display: inline-block;
+}
+.cabecalho-form .bt>i{
+    margin-top: -3px;
+    font-size: 18px;
+}
+.outro{
+    text-align: center; 
+}
+.botoes{
+    width: 375px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.span{
+    position: relative;
+    width: 375px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: #e0e0e0;
+    margin: 10px;
+}
+.user input{
+    width:375px;
+    border-radius: 5px;
+    background-color: #f5f6f7;
+    outline: none;
+    border:none;
+    box-shadow: inset 0px 0px 2px rgba(0,0,0,.1);
+    padding: 12px;
+}
+.user input:focus{
+    box-shadow:  0px 0px 6px #00bea4;
+}
+.user>h3{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 13px;
+}
+.password{
+    margin-bottom: 18px;
+}
+.btn-primari{
+    width: 180px;
+    height: 40px;
+    border: none;
+    background-color: #00bea4;
+    box-shadow:  5px 0px 10px #00bea4;
+    font-size: 17px;
+    color: white;
+    letter-spacing: 1.6px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.rodape{
+    margin-top: 55px;
+    font-size: 12px;
+    width:275px;
+    color: #888888;
+}
+.focus{
+    box-shadow: 1px 1px 5px #b8f1ff;
+ }
+ .cont{
+     font-size: 12px;
+     color:#888888;
+     margin-bottom: 10px;
+ }
+ form a{
+     text-decoration: none;
+     color: cornflowerblue;
+ }
+ form a:hover{
+    text-decoration: underline;
+ }
+ .fab{
+     color: #343434;
+     background-color: #f2f2f2;
+     padding: 10px;
+     border-radius: 3px;
+ }
+ .bt{
+     position: relative;
+     width: 70%;
+     padding: 10px 5px;
+     font-size: 11px;
+ }
+ .fa-google{
+     background: none;
+     left: 0;
+     color: white;
+     font-size: 13px;
+ }
+ .socias{
+     position: absolute;
+ }
